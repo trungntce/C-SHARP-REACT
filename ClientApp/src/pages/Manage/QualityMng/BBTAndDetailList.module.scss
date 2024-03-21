@@ -1,0 +1,9 @@
+.bbtContainer{
+  :global {
+    .cell-link{
+      text-decoration: underline dotted;
+      color: #004586;
+      cursor: pointer;
+    }
+  }
+}

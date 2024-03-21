@@ -1,0 +1,484 @@
+.panelSearchWrap{
+  :global {
+    .modal-dialog{
+      max-width: 1350px !important;
+    }
+  }
+}
+
+.lotSearchWrap{
+  :global {
+    .modal-dialog{
+      max-width: 1070px !important;
+    }
+
+    .search-param{
+      padding-left: 15px;
+      padding-right: 15px;
+      > div{
+        border: 1px solid #ccc;
+        padding: 5px;
+        padding-left: 7px;
+        padding-right: 7px;
+        background-color: #e8f4fe;
+      }
+    }
+
+    :required,
+    .required {
+      background-color: #e8f4fe;
+      border-color: #c8d4de;
+    }
+
+    .chart-spinner{
+      position: absolute;
+      top: 35%;
+      left: 45%;    
+      width:50px;
+      height: 50px;
+
+      display: none;
+      border: 1px solid #ccc;
+      background-color: rgba(255, 255, 255, 0.8);
+
+      padding: 8px;
+
+      z-index: 9999;
+    }
+
+    .table{
+      tbody{
+        tr{
+          td{
+            background-color: #fff;
+          }
+
+          td.judge-ok{
+            color: rgb(0, 89, 255);
+            font-weight: bolder; 
+          }
+          td.judge-ng{
+            color: rgb(255, 0, 0);
+            font-weight: bolder;
+          }
+        }
+
+        tr.selected{
+          td{
+            background-color: #e0eeff;
+          }
+        }
+      }
+    }
+  }
+}
+
+:global{
+  .raw-tooltip-container{
+    .tooltip {
+      font-size: 13px;
+      
+      .tooltip-inner{
+        min-width: 250px;
+        max-width: 400px;
+        word-break: keep-all;
+        white-space: nowrap;
+        overflow-y: visible;
+  
+        .raw-tablename{
+          color: #fffd6d !important;
+        }
+      }
+    }
+  }
+}
+
+.pieceSearchWrap{
+  :global {
+    .modal-dialog{
+      max-width: 1200px !important;
+    }
+
+    .panel-cell{
+      background-color: #eaf3ff !important;
+    }
+
+    .piece-cell{
+      background-color: #eaffef !important;
+    }
+  }
+}
+
+.traceWrap{
+  :global {
+    .ag-theme-alpine {
+      .top-row-ok{
+        .ag-cell{
+          background-color: #8ebfff !important;
+        }
+      }
+
+      .top-row-warn{
+        .ag-cell{
+          background-color: rgb(255, 187, 0) !important;
+        }
+      }
+
+      .top-row-chk{
+        .ag-cell{
+          background-color: rgb(255, 153, 0);
+        }
+      }
+
+      .top-row-ng{
+        .ag-cell{
+          background-color: #ff8888 !important;
+        }
+      }
+
+      .top-row-normal{
+        .ag-cell{
+          background-color: #8ebfff !important;
+        }
+      }
+
+      .scan-row{
+        //background-color: #eaf3ff !important;
+
+        .cell-panelid{
+          color: #0066ff;
+        }
+
+        .ag-cell-wrapper{
+          line-height: 30px;
+        }
+      }
+
+      .roll-scan-row{
+        //background-color: #eaffef !important;
+      }      
+
+      .lot-row{
+        .cell-lot{
+          color: #0066ff;
+        }        
+      }
+
+      .not-lot-row{
+        .cell-lot{
+          color: #1a9c00;
+        }
+      }
+
+      .not-job-oper{
+        //background-color: #fffbea !important;
+      }
+
+      .scan-row-layup{
+        //background-color: #ebffea !important;
+
+        .cell-panelid{
+          color: #1a9c00;
+        }
+
+        .ag-cell-wrapper{
+          line-height: 30px;
+        }
+      }
+
+      .scan-row-warn{
+        //background-color: #fffbea !important;
+      }
+
+      .roll-row{
+        //background-color: #ebffea !important;
+      }
+
+      .panel-row{
+        //background-color: #eaf3ff !important;
+      }
+
+      .roll-panel-row{
+        //background-color: #eafffa !important;
+      }
+
+      .main-row{
+        //background-color: #eaf3ff !important;
+      }
+
+      .selected-row{
+        background-color: #fffbc8 !important;
+      }
+
+      .underline{
+        text-decoration: underline;
+      }
+
+      .cell-lot{
+        color: #666;
+        font-size: 14px;
+
+        span{
+          padding-right: 3px;
+        }
+
+        i{
+          font-size: 12px;
+        }
+      }
+
+      .cell-tool{
+        color: #666;
+        font-size: 12px;
+        
+        span{
+          padding-right: 3px;
+        }
+      }
+
+      .cell-worker{
+        color: #666;
+        font-size: 12px;
+
+        span{
+          padding-right: 3px;
+        }
+      }
+
+      .cell-mat{
+        color: #666;
+        font-size: 12px;
+        
+        span{
+          padding-right: 3px;
+        }
+      }
+
+      .cell-eqp{
+        i{
+          color: #009122;
+          font-size: 12px;
+        }
+      }
+
+      .cell-param-ng{
+        //color: rgb(0, 89, 255);
+      }
+
+      .cell-recipe-ng{
+        //color: rgb(0, 89, 255);       
+      }
+
+      .param-row-ng{
+        .cell-param-ng{
+          //color: #ff0000;
+        }
+      }
+
+      .recipe-row-ng{
+        .cell-recipe-ng{
+          //color: #ff0000;          
+        }        
+      }
+
+      .work-type-r{
+        //background-color: #eaffeb !important;
+
+        .cell-re-ini{
+          padding-left: 3px;
+          padding-right: 3px;
+          margin-left: 3px;
+        }
+      }
+
+      .work-type-i{
+        //background-color: #e6feff !important;
+
+        .cell-re-ini{
+          padding-left: 3px;
+          padding-right: 3px;
+          margin-left: 3px;
+        }
+      }
+    }
+
+    .judge-ok{
+      color: rgb(0, 89, 255);
+    }
+
+    .judge-ng{
+      color: rgb(255, 0, 0);
+    }
+
+    .judge-x{
+      color: black;
+      background-color: #fffd6d;
+    }
+
+    .judge-chk {
+      color: rgb(255, 128, 0);
+    }
+
+    .qtime-ok{
+      color: rgb(0, 89, 255);
+    }
+
+    .qtime-ng{
+      color: rgb(255, 0, 0);
+    }
+
+    .chem-ok{
+      color: rgb(0, 89, 255);
+    }
+
+    .chem-chk{
+      color: rgb(255, 128, 0);
+    }
+
+    .chem-ng{
+      color: rgb(255, 0, 0);
+    }
+
+    .chem-chk {
+      color: rgb(255, 128, 0);
+    }
+
+    .text-black{
+      color: black;
+    }
+
+    .qtime-lock{
+      color: rgb(255, 0, 0);
+    }
+
+    .qtime-warn{
+      color: rgb(255, 187, 0);
+    }
+
+    .cell-param-recipe-judge{
+      padding-left: 3px !important;
+      padding-right: 3px !important;      
+    }
+
+    .judge-white{
+      color: #fff;
+    }
+
+    .card{
+      border-color: #BABFC7;
+
+      .card-header{
+        background-color: #F8F8F8;
+        border-bottom-color: #BABFC7;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-weight: bolder;
+      }
+
+      .card-body{
+        font-size: 13px;
+
+        .form-label{
+          font-weight: bolder;
+        }
+      }
+    }
+
+    .ag-header-cell{
+      .ag-cell-label-container{
+        gap: 1px;
+      }
+    }
+
+    .cell-tooltip{
+      background-color: white;
+      border: 1px solid #eee;
+      padding: 5px
+    }
+
+    .cell-operseq{
+      font-size: 14px;
+      color: #808080;
+    }
+
+    .badge{
+      padding: 3px 5px;
+      margin-right: 2px;
+      font-size: 11px;
+    }
+
+    .detail-cell{
+      color: #666;
+      font-size: 12px;
+    }
+
+    .detail-cell-roll{
+      color: #1a9c00;
+    }
+
+    .detail-cell-panel{
+      // color: #303030;
+    }
+        
+    .recipe-param-row-ng{
+      .detail-cell-panel{
+        color: #ff0000;
+      }
+    }
+
+    .not-workorder-row{
+      background-color: #ebffea !important;
+    }
+
+    .roll-list-wrap{
+      .ag-row-pinned{
+        .ag-cell{
+          line-height: 33px;
+        }        
+      }
+    }
+  }  
+}
+
+.traceMulti4MContainer{
+  :global {
+    .search-wrap{
+      .d-inline-flex{
+        > .row{
+          flex-direction: row;
+          flex-wrap: wrap;
+          flex-grow: unset;
+          row-gap: 5px;
+          margin-bottom: 5px;
+
+          > .col
+          {
+            .MuiInputBase-root{
+              flex-wrap: nowrap;
+            }
+          }
+        }
+      }
+    }
+
+    .ag-theme-alpine {
+      .judge-ok{
+        color: rgb(0, 89, 255);
+      }
+  
+      .judge-ng{
+        color: rgb(255, 0, 0);
+      }
+  
+      .judge-x{
+        color: black;
+        background-color: #fffd6d;
+      }
+
+      .detail-cell{
+        color: rgb(102, 102, 102);
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+// 
+// _buttons.scss
+// 
+
+button,
+a {
+    outline: none !important;
+}
+
+.btn-warning {
+    color: $white !important;
+}
+
+//
+// Soft Buttons
+// 
+
+@mixin button-variant-soft($bg) {
+    color: $bg;
+    background-color: rgba($bg, 0.1);
+    border-color: transparent;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $white;
+        background-color: $bg;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 $btn-focus-width rgba($bg, 0.5);
+    }
+}
+
+@each $color,
+$value in $theme-colors {
+    .btn-soft-#{$color} {
+        @include button-variant-soft($value);
+    }
+}
+
+// Soft Light button
+.btn-soft-light {
+    color: var(--#{$variable-prefix}gray-600);
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--#{$variable-prefix}gray-800);
+    }
+}
+.btn-soft-dark{
+    color: var(--#{$variable-prefix}gray-600);
+    &:hover,
+    &:focus,
+    &:active{
+    background-color: var(--#{$variable-prefix}gray-300);
+    border: transparent;
+    }
+}
+
+.btn-soft-secondary{
+    &:hover,
+    &:focus,
+    &:active{
+    border-color: transparent;
+    }
+}
+//
+// Split Dropdown buttons
+// 
+
+@mixin button-variant-split($bg) {
+    background-color: lighten($bg, 5%);
+    border: none;
+}
+
+@each $color,
+$value in $theme-colors {
+    .btn-#{$color}.dropdown-toggle-split {
+        @include button-variant-split($value);
+    }
+}
+
+.btn-light.dropdown-toggle-split {
+    background-color: var(--#{$variable-prefix}gray-300);
+}
+// Rounded Buttons
+.btn-rounded {
+    border-radius: 30px;
+}
+
+
+// dark
+[data-layout-mode="dark"]{
+    .btn-close{
+      background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/.8em auto no-repeat;
+    }
+  }
+
+// Soft Light button
+.btn-outline-light {
+    color: $dark;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $dark;
+    }
+}

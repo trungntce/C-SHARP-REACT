@@ -1,0 +1,19 @@
+SELECT WOS.JOB_ID
+     , WOS.JOB_NO
+     , WOS.OPERATION_SEQ_NO
+     , IIM.INVENTORY_ITEM_ID
+     , IIM.ITEM_CODE
+     , IIM.ITEM_DESCRIPTION
+    , STRU.LAYER_NO
+    , STRU.MAIN_BASE_FLAG
+   , STRU.BARCODE_USE_FLAG
+  FROM [dbo].[erp_wip_operations] WOS 
+    INNER JOIN [dbo].[erp_wip_requirements]   WRS ON WOS.WIP_OPERATION_ID      = WRS.WIP_OPERATION_ID
+    INNER JOIN [dbo].[erp_inv_item_master]    IIM ON WRS.COMPONENT_INV_ITEM_ID = IIM.INVENTORY_ITEM_ID
+    LEFT  JOIN [dbo].[erp_sdm_item_structure] STRU ON INVENTORY_ITEM_ID = STRU.SG_ITEM_ID
+ --WHERE WOS.JOB_NO = 'VCN230316341V002-00030'
+ WHERE ITEM_CODE = @bom_item_code
+ AND WOS.JOB_NO = @workorder
+ AND OPERATION_SEQ_NO = @oper_seq_no
+ ORDER BY WOS.JOB_NO
+        , WOS.OPERATION_SEQ_NO

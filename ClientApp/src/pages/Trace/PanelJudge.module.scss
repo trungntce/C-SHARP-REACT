@@ -1,0 +1,88 @@
+.panelJudgekWrap{
+  :global {
+    .ag-theme-alpine {
+      .ag-header-group-cell{
+        padding-left: 5px;
+        padding-right: 5px;
+        // justify-content: center;
+
+        .ag-header-group-cell-label{
+          font-size: 14px;
+        }
+      }
+
+      .detail-cell{
+        color: #666;
+      }
+
+      i.fa{
+        font-size: 12px;
+      }
+
+      .judge-ok {
+        color: rgb(0, 89, 255);
+      }
+  
+      .judge-ng {
+        color: rgb(255, 0, 0);
+      }  
+
+      .judge-x{
+        color: black;
+        background-color: #fffd6d;
+      }
+  
+      .judge-chk {
+        color: rgb(255, 128, 0);
+      }
+  
+      .qtime-ok{
+        color: rgb(0, 89, 255);
+      }
+  
+      .qtime-ng{
+        color: rgb(255, 0, 0);
+      }
+  
+      .chem-ok{
+        color: rgb(0, 89, 255);
+      }
+  
+      .chem-chk{
+        color: rgb(255, 128, 0);
+      }
+  
+      .chem-ng{
+        color: rgb(255, 0, 0);
+      }
+  
+      .chem-chk {
+        color: rgb(255, 128, 0);
+      }
+
+      .cell-silver{
+        background-color: #f7f7f7;
+      }
+  
+      .cell-yellow{
+        background-color: #ffffec;
+      }
+  
+      .cell-green{
+        background-color: #f2ffef;
+      }
+  
+      .badge{
+        padding: 3px 3px;
+        margin-right: 2px;
+        margin-left: 2px;
+        font-size: 11px;
+      } 
+
+      .grouped-row{
+        background-color: #eaf3ff !important;
+      }
+    }
+
+  }  
+}

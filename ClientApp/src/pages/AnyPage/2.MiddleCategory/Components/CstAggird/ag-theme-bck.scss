@@ -1,0 +1,63 @@
+@use "/node_modules/ag-grid-community/styles" as ag;
+
+@include ag.grid-styles(
+  (
+    theme: custom-name,
+    extend-theme: alpine-dark,
+    alpine-active-color: #00ff0000,
+  )
+);
+.ag-theme-custom-name {
+  --ag-background-color: #00ff0000;
+  --ag-data-color: white;
+  --ag-row-hover-color: #9dabcf1a;
+  --ag-header-foreground-color: white;
+  --ag-header-background-color: #ffffff1a;
+  --ag-odd-row-background-color: #575b641a;
+  --ag-borders: none;
+  --ag-row-border-style: dashed;
+  --ag-row-border-width: 1px;
+  --ag-row-border-color: #fff;
+}
+.ag-theme-custom-name .ag-header-cell-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.ag-theme-custom-name .ag-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.ag-theme-custom-name .ag-root-wrapper {
+  white-space: pre-line;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px #00000080;
+  box-sizing: border-box;
+}
+
+.ag-theme-custom-name .ag-header-cell-comp-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ag-theme-custom-name .ag-cell-value {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.ag-theme-custom-name .ag-theme-custom-name .ag-row {
+  margin-bottom: 15px;
+}
+
+.ag-theme-custom-name .header-wrapper {
+  letter-spacing: 3px;
+  font-weight: bold;
+}

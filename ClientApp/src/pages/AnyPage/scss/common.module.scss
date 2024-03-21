@@ -1,0 +1,14 @@
+
+.iconRotate {
+ animation: test 2s linear infinite;
+ color:red;
+}
+
+@keyframes test{
+ 0%{
+  transform: rotate(0deg);
+ }
+ 100%{
+  transform: rotate(360deg);
+ }
+}

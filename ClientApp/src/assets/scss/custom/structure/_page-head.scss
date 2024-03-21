@@ -1,0 +1,32 @@
+// 
+// Page-title
+// 
+
+.page-title-box {
+    padding-bottom: $grid-gutter-width;
+
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    h4 {
+        font-size: 20px!important;
+    }
+
+    .page-title-right{
+        @media (max-width: 575.98px) {
+            display: none;
+        }
+        padding-right: 3px;;
+    }
+
+    svg{
+      margin-right: 10px;
+      color: $gray-dark-500;
+    }
+
+    .page-title-lighter{
+      font-weight: $font-weight-lighter;
+  }
+}

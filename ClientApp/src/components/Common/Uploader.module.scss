@@ -1,0 +1,78 @@
+.uploaderContainer {
+  :global {    
+    .table-file {
+      margin-bottom: 5px;
+      border-collapse: separate;
+      border-spacing: 0;
+
+      thead{
+        position: sticky;
+        top:0;
+  
+        tr{
+          th, td{
+            padding: 7px;
+            vertical-align: middle;
+
+            .btn{
+              padding: 3px;
+
+              i{
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      tbody{
+        tr{
+          th, td{
+            padding: 4px 7px;
+            vertical-align: middle;
+
+            a{
+              word-break: break-all;
+            }
+
+            .btn{
+              padding: 3px;
+
+              i{
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .dropable{
+      border: 1px dashed silver;
+      padding: 3px;
+    }
+
+    .uploader-spinner{
+      display: none;
+      z-index: 9999;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.6);
+
+      .uploader-spinner-inner{
+        position: relative;
+        top: 35%;
+        left: 45%;    
+        width:50px;
+        height: 50px;
+
+        border: 1px solid #ccc;
+        background-color: rgba(255, 255, 255, 0.8);
+
+        padding: 8px;
+      }
+    }
+  }
+}

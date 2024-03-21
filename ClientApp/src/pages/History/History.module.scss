@@ -1,0 +1,59 @@
+.historyWrap{
+  :global {
+    .ag-theme-alpine {
+      .cell-gray{
+        color: #777;
+        font-size: 12px;
+      }
+
+      .cell-get{
+        color: #009122;
+        font-size: 12px;
+      }
+      .cell-put{
+        color: #0066ff;
+      }
+      .cell-post{
+        color: #7700ff;
+      }
+      .cell-delete{
+        color: #ff0015;
+      }
+    }
+
+    .card{
+      border-color: #BABFC7;
+
+      .card-header{
+        background-color: #F8F8F8;
+        border-bottom-color: #BABFC7;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-weight: bolder;
+        color: rgb(24, 29, 31);
+        line-height: 23px;
+      }
+
+      .card-body{
+        font-size: 13px;
+
+        .form-label{
+          font-weight: bolder;
+        }
+      }
+    }
+
+    pre{
+      height: 180px;
+      border: 1px solid #BABFC7;
+      padding: 5px;
+      margin-bottom: 5px;
+
+      .string { color: red; }
+      .number { color: magenta; }
+      .boolean { color: blue; }
+      .null { color: darkorange; background-color: yellow; }
+      .key { color: black; }
+    }
+  }  
+}

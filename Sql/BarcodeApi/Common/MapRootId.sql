@@ -1,0 +1,1 @@
+select dbo.fn_roll_map_root_id(@roll_id);

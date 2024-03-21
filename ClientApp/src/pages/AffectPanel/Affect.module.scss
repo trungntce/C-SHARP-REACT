@@ -1,0 +1,179 @@
+.affectWrap{
+  :global {
+    .ag-theme-alpine {
+      .scan-row{
+        background-color: #eaf3ff !important;
+
+        .cell-panelid{
+          color: #0066ff;
+        }
+
+        .ag-cell-wrapper{
+          line-height: 30px;
+        }
+      }
+
+      .roll-scan-row{
+        background-color: #eaffef !important;
+      }      
+
+      .lot-row{
+        .cell-lot{
+          color: #0066ff;
+        }        
+      }
+
+      .not-lot-row{
+        .cell-lot{
+          color: #1a9c00;
+        }
+      }
+
+      .scan-row-layup{
+        background-color: #ebffea !important;
+
+        .cell-panelid{
+          color: #1a9c00;
+        }
+
+        .ag-cell-wrapper{
+          line-height: 30px;
+        }
+      }
+
+      .scan-row-warn{
+        background-color: #fffbea !important;
+      }
+
+      .not-scan-row{
+
+      }
+
+      .roll-row{
+        background-color: #ebffea !important;
+      }
+
+      .panel-row{
+        background-color: #eaf3ff !important;
+      }
+
+      .roll-panel-row{
+        background-color: #eafffa !important;
+      }
+
+      .main-row{
+        background-color: #eaf3ff !important;
+      }
+
+      .underline{
+        text-decoration: underline;
+      }
+
+      .cell-tool{
+        color: #666;
+        font-size: 12px;
+        
+        span{
+          padding-right: 3px;
+        }
+      }
+
+      .cell-worker{
+        color: #666;
+        font-size: 12px;
+
+        span{
+          padding-right: 3px;
+        }
+      }
+
+      .cell-mat{
+        color: #666;
+        font-size: 12px;
+        
+        span{
+          padding-right: 3px;
+        }
+      }
+
+      .cell-eqp{
+        i{
+          color: #009122;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .judge-ok{
+      color: rgb(0, 89, 255);
+    }
+
+    .judge-ng{
+      color: rgb(255, 0, 0);
+    }
+
+    .judge-chk{
+      color: rgb(255, 128, 0);
+    }
+
+    .card{
+      border-color: #BABFC7;
+
+      .card-header{
+        background-color: #F8F8F8;
+        border-bottom-color: #BABFC7;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-weight: bolder;
+      }
+
+      .card-body{
+        font-size: 13px;
+
+        .form-label{
+          font-weight: bolder;
+        }
+      }
+    }
+
+    .ag-header-cell{
+      .ag-cell-label-container{
+        gap: 1px;
+      }
+    }
+
+    .cell-tooltip{
+      background-color: white;
+      border: 1px solid #eee;
+      padding: 5px
+    }
+
+    .cell-operseq{
+      font-size: 14px;
+      color: #808080;
+    }
+
+    .badge{
+      padding: 3px 5px;
+      margin-right: 2px;
+      font-size: 11px;
+    }
+
+    .detail-cell{
+      color: #666;
+      font-size: 12px;
+    }
+
+    .detail-cell-roll{
+      color: #1a9c00;
+    }
+
+    .detail-cell-panel{
+      color: #0066ff;
+    }
+
+    .not-workorder-row{
+      background-color: #ebffea !important;
+    }
+  }  
+}

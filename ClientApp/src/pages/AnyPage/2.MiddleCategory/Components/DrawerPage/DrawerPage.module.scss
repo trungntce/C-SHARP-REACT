@@ -1,0 +1,74 @@
+.layout {
+  width: 340px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.listheader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 10px;
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+  margin: 100px 0px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid gray;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.listinner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+.listItemlayout {
+  width: 100%;
+  height: 70px;
+  padding: 5px;
+}
+.itemInner {
+  width: 100%;
+  height: 90%;
+  font-size: large;
+  color: aliceblue;
+  letter-spacing: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemInner:hover {
+  cursor: pointer;
+  background-color: #ffffff1a;
+  border-radius: 2px 10px 2px 2px;
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+}
+
+.layout ::-webkit-scrollbar {
+  width: 8px; /* width of the scrollbar */
+}
+
+/* Handle */
+.layout ::-webkit-scrollbar-thumb {
+  background: #f6f6f680; /* color of the scrollbar handle */
+}
+
+.layout ::-webkit-scrollbar-thumb:hover {
+  background-color: gray;
+}
+
+/* Track */
+.layout ::-webkit-scrollbar-track {
+  background: #00000033; /* color of the scrollbar track */
+}

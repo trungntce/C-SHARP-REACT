@@ -1,0 +1,54 @@
+//
+// plugins-rtl.scss
+//
+
+// Calendar
+.fc-direction-ltr{
+    direction: rtl;
+}
+
+.fc-direction-ltr .fc-toolbar > * > :not(:first-child){
+    margin-right: .75em;
+}
+
+
+// ReactDrawer
+
+.css-sourceMap-modules-importLoaders-1-localIdentName-animate__fadeInRight___uwTeO{
+    animation-name: css-sourceMap-modules-importLoaders-1-localIdentName-animate__fadeInLeft___2Rcw5;
+}
+
+.css-sourceMap-modules-importLoaders-1-localIdentName-animate__fadeOutRight___hdB_e{
+    animation-name: css-sourceMap-modules-importLoaders-1-localIdentName-animate__fadeOutLeft___2jmiI;
+}
+
+.css-sourceMap-modules-importLoaders-1-localIdentName-ReactDrawer__drawer-right___h_uSC-sass{
+    right: auto;
+    left: 0;
+}
+
+// lightbox
+
+.modal-video-close-btn{
+    left: 0px;
+    right: auto;
+    @media (orientation: landscape) {
+        right: auto;
+        left: -45px;
+    }
+}
+
+// rdw-editor
+
+.rdw-dropdown-carettoclose, .rdw-dropdown-carettoopen{
+    right: auto;
+    left: 10%;
+}
+
+// form wizard
+
+.wizard-nav .list-item::after{
+    left: auto;
+    right: 62%;
+}
+

@@ -1,0 +1,14 @@
+SELECT WOS.JOB_ID
+     , WOS.JOB_NO
+     , WOS.OPERATION_SEQ_NO
+     , IIM.INVENTORY_ITEM_ID
+     , IIM.ITEM_CODE
+     , IIM.ITEM_DESCRIPTION
+  FROM [dbo].[erp_wip_operations] WOS 
+    INNER JOIN [dbo].[erp_wip_routing_tool]  WRT ON WOS.WIP_OPERATION_ID = WRT.WIP_OPERATION_ID
+    INNER JOIN [dbo].[erp_inv_item_master]   IIM ON WRT.TOOL_ITEM_ID     = IIM.INVENTORY_ITEM_ID
+ WHERE WOS.JOB_NO = @workorder
+ AND OPERATION_SEQ_NO =@oper_seq_no
+ ORDER BY WOS.JOB_NO
+        , WOS.OPERATION_SEQ_NO
+        , IIM.ITEM_CODE

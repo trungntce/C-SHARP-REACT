@@ -1,0 +1,167 @@
+.fdcOperWrap{
+  :global {
+    .ag-theme-alpine {
+      .ag-header-group-cell{
+        padding-left: 5px;
+        padding-right: 5px;
+        // justify-content: center;
+
+        .ag-header-group-cell-label{
+          font-size: 14px;
+        }
+      }
+
+      .detail-cell{
+        color: #666;
+      }
+
+      i.fa{
+        font-size: 12px;
+      }
+
+      .judge-ok {
+        color: rgb(0, 89, 255);
+      }
+  
+      .judge-ng {
+        color: rgb(255, 0, 0);
+      }
+  
+      .judge-re {
+        color: rgb(0, 197, 0);
+      }
+
+      .interlock-judge-d{
+        color: rgb(255, 0, 0);
+      }
+  
+      .interlock-judge-r{
+        color: rgb(0, 197, 0);
+      }
+  
+      .interlock-judge-u{
+        color: rgb(0, 89, 255);
+      }
+
+      .cell-silver{
+        background-color: #f7f7f7;
+      }
+  
+      .cell-yellow{
+        background-color: #ffffec;
+      }
+  
+      .cell-green{
+        background-color: #f2ffef;
+      }
+  
+      .badge{
+        padding: 3px 3px;
+        margin-right: 2px;
+        margin-left: 2px;
+        font-size: 11px;
+      } 
+
+      .setted-row{
+        background-color: #eaf3ff !important;
+      }
+
+      .fdc-oper-y-row{
+        font-weight: 600 !important;
+      }
+
+      .fdc-oper-n-row{
+        font-weight: 100 !important;
+      }
+    }
+
+  }  
+}
+
+.fdcInterlockWrap{
+  :global {
+    .ag-theme-alpine {
+      .ag-header-group-cell{
+        padding-left: 5px;
+        padding-right: 5px;
+        // justify-content: center;
+
+        .ag-header-group-cell-label{
+          font-size: 14px;
+        }
+      }
+
+      .detail-cell{
+        color: #666;
+      }
+
+      i.fa{
+        font-size: 12px;
+      }
+
+      .judge-ok {
+        color: rgb(0, 89, 255);
+      }
+  
+      .judge-ng {
+        color: rgb(255, 0, 0);
+      }
+  
+      .judge-re {
+        color: rgb(0, 197, 0);
+      }
+
+      .interlock-judge-d{
+        color: rgb(255, 0, 0);
+      }
+  
+      .interlock-judge-r{
+        color: rgb(0, 197, 0);
+      }
+  
+      .interlock-judge-u{
+        color: rgb(0, 89, 255);
+      }
+
+      .cell-silver{
+        background-color: #f7f7f7;
+      }
+  
+      .cell-yellow{
+        background-color: #ffffec;
+      }
+  
+      .cell-green{
+        background-color: #f2ffef;
+      }
+  
+      .cell-purple{
+        background-color: #faefff;
+      }
+  
+      .badge{
+        padding: 3px 3px;
+        margin-right: 2px;
+        margin-left: 2px;
+        font-size: 11px;
+      } 
+
+      .setted-row{
+        background-color: #eaf3ff !important;
+      }
+
+      .handle-row{
+        background-color: #ffffec !important;
+      }
+  
+      .settle-row{
+        background-color: #f2ffef !important;
+      }
+
+      .spl-row{
+        background-color: #ddd !important;
+      }
+    }
+
+  }  
+}

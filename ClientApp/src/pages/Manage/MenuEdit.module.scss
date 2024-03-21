@@ -1,0 +1,13 @@
+.menuAuthWrap{
+  :global a.btn-sm{
+    line-height: 30px;
+  }
+
+  :global .btn{
+    padding: 0px;
+  }
+
+  :global .new-row td:last-child{
+    padding-top: 7px;
+  }
+}

@@ -1,0 +1,181 @@
+.matrix4Container {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: #0f1010;
+
+  :global {
+    .dark-title{
+      box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 1), -0.5rem -0.5rem 2rem rgba(255, 255, 255, 0.05);
+      border-radius: 0.5rem;
+      padding: 5px 15px;
+      font-size: 1.2rem;
+      color: #fff;
+      background-color: #15161d;
+      text-align: center;
+    }
+
+    .dark-card::-webkit-scrollbar {
+      width: 10px;
+    }
+    .dark-card::-webkit-scrollbar-thumb {
+      background-color: rgb(27, 27, 27);
+      border-radius: 10px;
+      background-clip: padding-box;
+      border: 2px solid transparent;
+    }
+    .dark-card::-webkit-scrollbar-track {
+      background-color: rgb(0, 0, 0);
+      border-radius: 10px;
+      box-shadow: inset 0px 0px 5px rgb(46, 46, 46);
+    }
+
+    .dark-card {
+      background-color: #111313;
+      box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 1), -0.5rem -0.5rem 2rem rgba(255, 255, 255, 0.05);
+      border-radius: 0.5rem;
+
+      .dark-header {
+        padding: 15px;
+        color: #fff;
+        font-size: 17px;
+      }
+
+      .overview-title{
+        font-size: 1.2rem;
+        padding-top: 7px;
+        padding-bottom: 7px;        
+
+        .menu-container{
+          font-size: 1rem;
+          float: left;
+          margin-left: 30px;
+          margin-top: 2px;
+
+          .menu-item{
+            display: inline-block;
+            margin-left: 10px;
+            margin-right: 10px;
+            cursor: pointer;
+
+            i{
+              margin-right: 2px;
+            }
+          }
+        }
+
+        .top-timer{
+          margin-top: 5px;
+          margin-left: 150px;
+          float: left;
+          font-size: 0.8rem;
+          color: #b3b3b3;
+        }
+      }
+
+      .dark-body {
+        padding: 8px 5px 0 0;
+
+        .apexcharts-gridlines-horizontal{
+          opacity: 0.3;
+        }
+
+        .apexcharts-xaxis-label{
+          color: #fff;
+        }
+
+        .spinner-container{
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .display-none{
+          display: none;
+        }
+
+        .count-container{
+
+          > div{
+            color: #aaa;
+
+            > div {
+              > div{
+                > span:first-child{
+                  font-size: 23px;
+                  color: #4fb8ff;
+                }
+
+                > span:nth-child(2){
+                  font-size: 23px;
+                  color: #fffc4f;
+                }
+
+                > span:nth-child(3){
+                  font-size: 23px;
+                  color: #ff373d;
+                }
+
+                > span:nth-child(4){
+                  font-size: 23px;
+                  color: #45ff24;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .search-container {
+      display: flex;
+      justify-content: start;
+      margin-left: 5px;
+
+      input{
+        border-color: #888;
+        color: #ccc;
+        background-color: #111313;
+      }
+
+      select{
+        border-color: #888;
+        color: #ccc;
+        background-color: #111313;
+      }
+
+      ::placeholder {
+        color: #aaa !important;
+      }
+
+      .MuiInputBase-root{
+        max-height: 34px;
+        overflow-y: hidden;
+        white-space: nowrap;
+
+        .MuiInputBase-input::placeholder {
+          color: #ccc !important;
+        }
+      }
+
+      .MuiOutlinedInput-notchedOutline{
+        border-color: #888 !important;
+        color: #ccc;
+        max-height: 38px;        
+      }
+
+      .MuiChip-root{
+        background-color: rgba(50, 50, 50, 1);
+        color: #ddd;
+
+        svg{
+          color: #ccc;
+        }
+
+        .MuiChip-label{
+          max-width: 140px;
+        }
+      }
+    }
+  }
+}

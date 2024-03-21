@@ -1,0 +1,80 @@
+.langTextBoxContainer {
+
+  :global {
+    .lang-item-container{
+      position: relative;
+      height: 31px;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      border-left: 1px solid #dddddd;
+      border-right: 1px solid #dddddd;
+
+      > div{
+        top: 0;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+      }      
+    }
+
+    .show-item{
+      overflow-y: unset !important;
+      overflow-x: unset !important;
+
+      .mode-single {
+        > span.input-group-text{
+          border-left: 1px solid #dddddd;
+        }
+  
+        > input.form-control{
+          border-right: 1px solid #dddddd;
+        }
+
+        left: -1px;
+        background-color: #fff;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    .mode-single {
+      min-height: 31px !important;
+
+      > span.input-group-text{
+        width: 64px;
+        border-left: none;
+      }
+
+      > input.form-control{
+        border-right: none;
+      }
+    }
+
+    .mode-single + .mode-single {
+      margin-top: -1px;
+    }
+
+    .mode-multiple {
+      > .break {
+        display: none;
+      }
+    }
+  }
+}
+
+
+.langTextBoxContainerSm {
+  :global {
+    span.input-group-text{
+      width: 43px;
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+
+    input.form-control{
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+  }
+}

@@ -1,0 +1,145 @@
+.layout {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  border: 1px solid #6e6e6e;
+}
+
+.layout:hover {
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  color: white;
+  padding-left: 5px;
+  font-size: 1.3rem;
+  display: flex;
+  border-bottom: 1px solid #6e6e6e;
+  background-color: #6e6e6e80;
+  border-radius: 4px;
+}
+.list {
+  flex: 1.3;
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 3px;
+  font-size: 10px;
+}
+
+.onstatus {
+  border: 1px solid #38e54d;
+  background-color: #38e54d;
+}
+.offstatus {
+  border: 1px solid #ffe569;
+  background-color: #ffe569;
+}
+.warnstatus {
+  border: 1px solid #e90064;
+  background-color: #e90064;
+}
+.anystatus {
+  border: 1px solid #7f8487;
+  background-color: #7f8487;
+}
+
+.laterstatus {
+  border: 1px solid #7f8487;
+  background-color: #7f8487;
+}
+.nonestatus {
+  border: 1px solid #060047;
+}
+
+.roomLayer {
+  position: relative;
+  height: 100%;
+
+  :global {
+    .eqp-container {
+      clear: both;
+    }
+
+    .next-count {
+      position: absolute;
+      bottom: 7px;
+      right: 7px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #333;
+    }
+
+    .eqp-container > div {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1px;
+
+      .layer-eqp-item {
+        border: 1px solid #000000;
+        background-color: transparent;
+        color: #fff;
+        font-size: 5px;
+        line-height: 4px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+
+        i {
+          opacity: 1;
+        }
+      }
+      .room-layer:hover {
+        border: 1.2px solid #ffffff;
+      }
+    }
+
+    .layer-eqp-total {
+      color: black;
+      background-image: linear-gradient(to bottom right, #dadada, #ffffff);
+    }
+
+    .layer-eqp-run {
+      color: black;
+      background-image: linear-gradient(to bottom right, #00913c, #00d659);
+    }
+
+    .layer-eqp-wait {
+      color: black;
+      background-image: linear-gradient(to bottom right, #9c9a00, #e2de00);
+    }
+
+    .layer-eqp-fail {
+      background-image: linear-gradient(to bottom right, #414141, #585858);
+    }
+
+    .layer-eqp-ng {
+      background-image: linear-gradient(to bottom right, #aa0000, #c40000);
+    }
+
+    .layer-eqp-nextstep {
+      background-image: linear-gradient(
+        to bottom right,
+        rgba(46, 46, 46, 0.2) 0%,
+        rgba(64, 64, 64, 0.2) 49%,
+        #333 50%,
+        rgba(64, 64, 64, 0.2) 51%,
+        rgba(83, 83, 83, 0.2) 100%
+      );
+      border: solid 1px #555;
+    }
+  }
+}

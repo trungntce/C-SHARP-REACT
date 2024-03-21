@@ -1,0 +1,72 @@
+.layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.maplayout {
+  flex: 76;
+  width: 100%;
+  height: 100%;
+  padding: 0px 0.5px;
+  box-shadow: 0px 0px 10px black;
+  .map {
+    width: 1416.39px;
+    height: 640.47px;
+    position: relative;
+  }
+}
+.charts {
+  flex: 24;
+  box-shadow: 0px 0px 10px black;
+}
+
+.roomlayer {
+  box-sizing: border-box;
+  position: absolute;
+  border: 1px solid #a8a8a880;
+  color: #87b7ff;
+  display: flex;
+  flex-direction: column;
+  background-color: #292d36;
+  border-radius: 2px;
+  .titlee {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .eqpcontainer {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+
+    .layereqpitem {
+      border: 1px solid #b2ffbd;
+      background-color: #00ba1f;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 10px;
+      padding: 2px 1px;
+      text-align: center;
+    }
+
+    .layereqpdown {
+      border-color: #ffeb90;
+      background-color: #ffe569;
+    }
+
+    .layereqpwarn {
+      border-color: #ffeb90;
+      background-color: #c2bf00;
+    }
+  }
+}
+
+.roomlayer:hover {
+  cursor: pointer;
+  border: 1px solid #87b7ff;
+}

@@ -1,0 +1,15 @@
+declare module 'react-dom/client';
+declare module 'react-select';
+declare module 'react-bootstrap-table2-editor';
+declare module 'react-flatpickr';
+declare module 'react-input-mask';
+declare module 'react-slick';
+declare module 'react-sparklines';
+declare module 'react-apexcharts';
+declare module 'react-i18next';
+declare module 'react-router';
+declare module '*.png'
+declare module '*.jpg'
+declare module '*.jpeg';
+declare module 'react-table';
+declare module 'react-datepicker';
